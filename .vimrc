@@ -98,11 +98,13 @@ set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
 
 " Show the status on the second to last line.
 set laststatus=2
-
 " }}}
 
+" COLORSCHEME SETTINGS --------------------------------------------- {{{
 syntax on
 colorscheme onedark
 let g:lightline = {
   \ 'colorscheme': 'onedark',
   \ }
+
+" }}}
