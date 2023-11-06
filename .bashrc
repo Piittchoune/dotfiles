@@ -15,7 +15,7 @@ export PATH
 # export SYSTEMD_PAGER=
 
 # User aliases
-alias ll='ls -liath' 
+alias ll='ls -liah' 
 
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
