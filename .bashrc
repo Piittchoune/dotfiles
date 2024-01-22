@@ -15,16 +15,11 @@ export PATH
 # export SYSTEMD_PAGER=
 
 # User aliases
-alias ll='ls -liah' 
+alias ll='ls -la' 
 alias g="git"
 
-function parse_git_branch () {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-YELLOW="\[\033[0;33m\]"
-GREEN="\[\033[0;32m\]"
-NO_COLOR="\[\033[0m\]"
-PS1="$GREEN\u@\h$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
+# Sourcing
+source ~/.bash_powerline
 
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
